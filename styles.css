@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Type Selectors */
+
+html {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+div {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #07162f;
+  padding: 30px;
+}
+
+/* Classes */
+
+.redBG {
+  background-color: red;
+  color: #fff;
+  padding: 15px;
+}
+
+#resourceLink {
+  text-decoration: none;
+}
+
+/* Attribute Selectors */
+
+a[href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators#General_sibling"] {
+  color: #245ab9;
+}
+
+/* Pseudo Class / Pseudo Element */
+
+#resourceLink:hover {
+  color: #fff;
+}
+
+ul li:nth-child(4) {
+  color: #fff;
+}
+
+ul li:nth-child(even){
+  color: #fff;
+}
+
+/* Combinators */
+
+/* Descendant Combinator */
+main em{
+  color: #fff;
+}
+
+/* Direct Child Combinator */
+
+p > em {
+  color: orange;
+}
+
+/* General Sibling */
+
+h3 ~ p {
+  color: #4874d4;
+}
+
+/* Direct Sibling */
+
+h3 + p {
+  color: #fff;
+}
